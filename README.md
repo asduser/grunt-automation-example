@@ -1,6 +1,6 @@
 ## How to
 
-Be sure, that you have installed <b>Node.js<b/> and <b>Grunt-CLI</b>. 
+Be sure, that you have installed Node.js and Grunt-CLI. 
 
 If not, download node.js and use the following syntax:
 
