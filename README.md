@@ -2,7 +2,7 @@
 
 Be sure, that you have installed Node.js and Grunt-CLI. 
 
-If not, download node.js and use the following syntax:
+If not, download node.js, install it and use the following syntax:
 
 ```
 npm install grunt -g
