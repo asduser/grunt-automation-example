@@ -1,3 +1,3 @@
 @echo off
 call npm install
-call grunt
+call grunt build-automation

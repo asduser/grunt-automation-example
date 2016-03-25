@@ -8,9 +8,9 @@ module.exports = function(grunt) {
         concat: {
           dist: {
             src: [
-                'main/app/js/*.js'
+                'app/js/*.js'
             ],
-            dest: 'main/build/output.js',
+            dest: 'build/bundles/output.js',
           }            
         },
         
@@ -18,7 +18,7 @@ module.exports = function(grunt) {
         uglify: {
           my_target: {
             files: {
-              'main/build/output.min.js': ['main/build/output.js']
+              'build/bundles/output.min.js': ['build/bundles/output.js']
             }
           }
         },
@@ -31,7 +31,7 @@ module.exports = function(grunt) {
           },
           target: {
             files: {
-              'main/build/output.css': ['main/app/css/one.css', 'main/app/css/two.css']
+              'build/css/output.css': ['app/css/one.css', 'app/css/two.css']
             }
           }
         },
@@ -49,10 +49,8 @@ module.exports = function(grunt) {
             },
             files: [
                 {
-                    expand: true, 
-                    flatten: true, 
-                    src: [ 'main/index.html' ], 
-                    dest: 'main/build/'
+                    src: [ 'index_min.html' ], 
+                    dest: 'build/index.html'
                 }
             ]
           }
@@ -67,5 +65,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-replace');
     
     // Register a task to use it through shell.
-    grunt.registerTask('default', ['concat', 'uglify', 'cssmin', 'replace']);
+    grunt.registerTask('build-automation', ['concat', 'uglify', 'cssmin', 'replace']);
 };
