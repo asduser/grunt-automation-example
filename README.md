@@ -22,7 +22,7 @@ To build the project just use the CMD-command (or dblclick on it):
 build.bat
 ```
 
-A compiled version will be rendered into the <b>build/</b> directory.
+A compiled version will be rendered into the <b>build</b> directory.
 
 ### Production
 
