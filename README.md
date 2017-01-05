@@ -26,11 +26,11 @@ grunt --version
 build.bat
 ```
 
-Compiled version will be rendered into the <b>build</b> directory.
+Compiled version will be rendered into the **build** directory.
 
-3. Use `npm install` command only if you don't have npm_modules directory in root.
+3. Use `npm install` command only if you don't have **npm_modules** directory in root.
 
 ## Production
 
 Be sure, that you exactly included the minified *.js version. Otherwise, your application will be cached on the users PC.
-In real application version copy all files within a <b>"build"</b> directory.
+In real application version copy all files within a **"build"** directory.
