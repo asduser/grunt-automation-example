@@ -10,7 +10,7 @@ module.exports = function(grunt) {
             src: [
                 'app/js/*.js'
             ],
-            dest: 'build/bundles/output.js',
+            dest: 'build/bundles/output.js'
           }            
         },
         
@@ -54,6 +54,19 @@ module.exports = function(grunt) {
                 }
             ]
           }
+        },
+
+        // Work with ES6-syntax version.
+        babel: {
+            options: {
+                sourceMap: false,
+                presets: ['es2015']
+            },
+            dist: {
+                files: {
+                    'build/bundles/output.js': 'build/bundles/output.js'
+                }
+            }
         }
         
     });
@@ -63,7 +76,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-replace');
-    
+    grunt.loadNpmTasks('grunt-babel');
+
     // Register a task to use it through shell.
-    grunt.registerTask('build-automation', ['concat', 'uglify', 'cssmin', 'replace']);
+    grunt.registerTask('build-automation', ['concat', 'babel', 'uglify', 'cssmin', 'replace']);
 };
