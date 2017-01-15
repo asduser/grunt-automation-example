@@ -18,17 +18,16 @@ grunt --version
 
 ## Bundles
 
-1. In root directory use `npm install` via CMD. It will install all needed project dependencies.
-
-2. To build the project just use `grunt build-automation` (or dblclick on *.bat file):
+1. `git clone https://github.com/asduser/grunt-automation-example.git`.
+2. `cd grunt-automation-example`.
+3. In root directory use `npm install` via CMD. It will install all needed project dependencies.
+4. To build the project just put in CMD `grunt build-automation` (or dblclick on *.bat file):
 
 ```
 build.bat
 ```
 
 Compiled version will be rendered into the **build** directory.
-
-3. Use `npm install` command only if you don't have **npm_modules** directory in root.
 
 ## Production
 

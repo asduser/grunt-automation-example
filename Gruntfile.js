@@ -1,4 +1,7 @@
-module.exports = function(grunt) {      
+module.exports = function(grunt) {
+
+    // Measures the time each task takes.
+    require('time-grunt')(grunt);
     
     // Initialize main configuration.
     grunt.initConfig({

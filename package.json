@@ -9,6 +9,7 @@
     "grunt-contrib-concat": "*",
     "grunt-contrib-cssmin": "*",
     "grunt-contrib-uglify": "*",
-    "grunt-replace": "*"
+    "grunt-replace": "*",
+    "time-grunt": "*"
   }
 }
