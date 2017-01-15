@@ -32,4 +32,4 @@ Compiled version will be rendered into the **build** directory.
 ## Production
 
 Be sure, that you exactly included the minified *.js version. Otherwise, your application will be cached on the users PC.
-In real application version copy all files within a **"build"** directory.
+In real application version copy all files within a **build** directory.
