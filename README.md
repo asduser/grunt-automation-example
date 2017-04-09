@@ -33,3 +33,9 @@ Compiled version will be rendered into the **build** directory.
 
 Be sure, that you exactly included the minified `.js` version. Otherwise, your application will be cached on the users PC.
 In real application version copy all files within a **build** directory.
+
+## Licence
+
+MIT License
+
+Copyright (c) 2017 [asduser](https://github.com/asduser)
